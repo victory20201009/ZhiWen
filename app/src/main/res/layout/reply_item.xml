@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_common">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zzu.zk.zhiwen.customed_ui.MyCircleView
+            android:id="@+id/reply_avator"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:imgSrc="@mipmap/image_weibo_home_2" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:text="" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/adopt"
+            android:textColor="@color/secondColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reply_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+
+                android:text=""
+                android:textSize="15sp"
+                android:ellipsize="middle"
+                android:maxLines="4"
+                android:gravity="top|left"/>
+
+
+
+            <com.zzu.zk.zhiwen.customed_ui.NineGridLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/layout_nine_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                app:sapcing="4dp" />
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="20dp">
+
+
+                <!--<View-->
+                    <!--android:id="@+id/zan"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+
+                    <!--android:background="@drawable/ic_zan"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/num_of_zan"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="20"-->
+                    <!--android:textSize="10sp" />-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="60dp"-->
+
+                    <!--android:background="#0000"/>-->
+
+
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/time"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="300"
+                    android:textSize="10sp" />
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:id="@+id/delete_reply_indecator"
+                    android:layout_width="14dp"
+                    android:visibility="gone"
+                    android:layout_height="14dp"
+                    android:background="@drawable/ic_clear"/>
+
+                <TextView
+                    android:id="@+id/delete_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:text="删除"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+

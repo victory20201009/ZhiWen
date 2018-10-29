@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:id="@+id/refreshLayout"
+        app:srlHeaderHeight="500dp"
+        app:srlFooterHeight="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.66"
+        app:srlEnablePureScrollMode="true">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:descendantFocusability="afterDescendants"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/toolbar_height"
+            android:clipToPadding="false"
+            android:layout_height="match_parent"
+
+            android:overScrollMode="never"
+            tools:listitem="@layout/notify_item"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="@color/transfirstColor" />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sys_notify"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/clear_cache" />
+
+    </LinearLayout>
+
+</FrameLayout>

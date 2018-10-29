@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_add_q"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <EditText
+            android:id="@+id/reply_con"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/q_con_bg_se"
+            android:gravity="top"
+            android:hint="@string/set_reply_content"
+            android:inputType="textMultiLine"
+            android:maxLength="800"
+            android:maxLines="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/watcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.goyourfly.multi_picture.MultiPictureView
+        android:id="@+id/multiple_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:editable="true"
+        app:max="6"
+        app:ratio="1"
+        app:space="6dp"
+        app:span="4" />
+
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1.5dp"
+            android:divider = "@color/colorDivision"
+            android:background="@color/colorDivision"
+            android:dividerHeight = "1.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我也是有底线的"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:divider = "@color/colorDivision"
+            android:background="@color/colorDivision"
+            android:layout_height="1.5dp"
+            android:dividerHeight = "1.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

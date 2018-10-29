@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:id="@+id/refreshLayout"
+        app:srlHeaderHeight="500dp"
+        app:srlFooterHeight="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.66"
+        app:srlEnablePureScrollMode="true">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:descendantFocusability="afterDescendants"
+            android:layout_width="match_parent"
+            android:paddingTop="?android:attr/actionBarSize"
+            android:clipToPadding="false"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:overScrollMode="never"
+            tools:listitem="@layout/add_reply_item"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="@color/transfirstColor" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@android:color/transparent"
+        app:title="">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="start|center_vertical"
+                android:text="@string/cancel"
+                android:textColor="@drawable/canael_q_sel"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="添加回复"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/publish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="end|center_vertical"
+                android:text="@string/publish"
+                android:textColor="@drawable/pub_q_sel"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+</FrameLayout>

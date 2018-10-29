@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlFooterTranslationViewId="@+id/recyclerView">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/toolbar_height" />
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                 />
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundDark"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/toolbar_height"
+                app:elevation="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:divider="@android:drawable/divider_horizontal_dark"
+                    android:orientation="vertical"
+
+                    android:showDividers="beginning|end"
+                    app:layout_scrollFlags="scroll">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/padding_common"
+                        android:paddingRight="@dimen/padding_common"
+                        android:paddingTop="2dp">
+
+                        <Space
+                            android:layout_width="@dimen/padding_common"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="0dp"
+                            android:layout_height="26dp"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:gravity="left|center_vertical"
+                            android:text="title"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+
+                        <TextView
+                            android:id="@+id/score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:gravity="left|center_vertical"
+
+                            android:text="20积分"
+
+                            android:textColor="@color/secondColor"
+
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <!--<View-->
+                    <!--style="@style/AppTheme.Division"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="5dp" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/firstColor"
+                        android:orientation="vertical">
+
+                        <!--<View style="@style/AppTheme.Division" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBackground"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_common">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="18dp"
+                                android:background="@color/colorPrimary" />
+
+                            <Space
+                                android:layout_width="@dimen/padding_common"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                style="@style/AppTheme.Label"
+                                android:layout_gravity="center_vertical"
+                                android:text="问题内容"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                style="@style/AppTheme.Label"
+                                android:id="@+id/creat_time"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="2018-09-22"
+                                android:layout_height="wrap_content" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLength="2000"
+                        android:maxLines="200"
+                        android:paddingLeft="@dimen/padding_common"
+                        android:paddingRight="@dimen/padding_common"
+                        android:textSize="16sp"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/firstColor"
+                        android:orientation="vertical">
+
+                        <!--<View style="@style/AppTheme.Division" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBackground"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_common">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="18dp"
+                                android:background="@color/colorPrimary" />
+
+                            <Space
+                                android:layout_width="@dimen/padding_common"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                style="@style/AppTheme.Label"
+                                android:layout_gravity="center_vertical"
+                                android:text="问题配图"
+                                android:textColor="@color/colorPrimary" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <com.zzu.zk.zhiwen.customed_ui.NineGridLayout
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/layout_nine_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="8dp"
+                        app:sapcing="4dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/firstColor"
+                        android:orientation="vertical">
+
+                        <!--<View style="@style/AppTheme.Division" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBackground"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_common">
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="18dp"
+                                android:background="@color/colorPrimary" />
+
+                            <Space
+                                android:layout_width="@dimen/padding_common"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                style="@style/AppTheme.Label"
+                                android:layout_gravity="center_vertical"
+                                android:text="问题附件"
+                                android:textColor="@color/colorPrimary" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/file_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:drawableLeft="@drawable/ic_fujian"
+                            android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:visibility="gone"
+                            android:layout_height="28dp"
+                            android:ellipsize="middle"
+                            android:textColor="@drawable/fujian_text_sel"
+                            android:gravity="center_vertical|left"
+                            android:text="附件1"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:drawableLeft="@drawable/ic_fujian"
+                            android:layout_height="28dp"
+                            android:ellipsize="middle"
+                            android:textColor="@drawable/fujian_text_sel"
+                            android:gravity="center_vertical|left"
+                            android:text="附件2"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:drawableLeft="@drawable/ic_fujian"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:singleLine="true"
+                            android:focusable="true"
+                            android:layout_height="28dp"
+                            android:ellipsize="middle"
+                            android:textColor="@drawable/fujian_text_sel"
+                            android:gravity="center_vertical|left"
+                            android:text="附件1"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:singleLine="true"
+                            android:drawableLeft="@drawable/ic_fujian"
+                            android:layout_height="28dp"
+                            android:ellipsize="middle"
+                            android:visibility="gone"
+                            android:textColor="@drawable/fujian_text_sel"
+                            android:gravity="center_vertical|left"
+                            android:text="附件2"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:drawableLeft="@drawable/ic_fujian"
+                            android:layout_width="match_parent"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_height="28dp"
+                            android:visibility="gone"
+                            android:singleLine="true"
+                            android:ellipsize="middle"
+                            android:textColor="@drawable/fujian_text_sel"
+                            android:gravity="center_vertical|left"
+                            android:text="附件1"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/firstColor"
+                    android:orientation="vertical"
+
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="exitUntilCollapsed|enterAlways|enterAlwaysCollapsed">
+
+                    <!--<View style="@style/AppTheme.Division" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBackground"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_common">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="18dp"
+                            android:background="@color/colorPrimary" />
+
+                        <Space
+                            android:layout_width="@dimen/padding_common"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            style="@style/AppTheme.Label"
+                            android:layout_gravity="center_vertical"
+                            android:text="回复列表"
+                            android:textColor="@color/colorPrimary" />
+
+
+                        <TextView
+                            style="@style/AppTheme.Label"
+                            android:id="@+id/num_of_comment"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="20条回复"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <!--<View style="@style/AppTheme.Division" />-->
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="#888"
+            app:srlClassicsSpinnerStyle="Translate"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="@color/transfirstColor" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@android:color/transparent"
+        app:title="">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/prodback"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/back"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.zzu.zk.zhiwen.customed_ui.MyCircleView
+                    android:id="@+id/avator"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:imgSrc="@mipmap/image_weibo_home_2" />
+
+                <TextView
+                    android:id="@+id/uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="张三"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/promenu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/option">
+
+            </View>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff000000" />
+
+        <com.bm.library.PhotoView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+
+
+
+
+</FrameLayout>

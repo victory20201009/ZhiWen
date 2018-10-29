@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:padding="5dp">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/Green"
+        android:gravity="center"
+        android:text="关注此人"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/Green"
+        android:gravity="center"
+        android:text="收藏该问题"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/Green"
+        android:gravity="center"
+        android:text="添加回复"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zzu.zk.zhiwen.customed_ui.MyCircleView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:imgSrc="@mipmap/image_weibo_home_2" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="更换头像"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp" />
+
+
+        <View
+            android:id="@+id/change_avator"
+            android:background="@drawable/forward"
+            android:layout_marginRight="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/nickname" />
+
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp"
+            android:text="昵称：xxx" />
+
+
+        <TextView
+            android:id="@+id/change_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textColor="@color/firstColor"
+            android:layout_marginRight="17dp"
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/password" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp"
+            android:text="修改密码" />
+
+        <View
+            android:id="@+id/change_pass"
+            android:background="@drawable/forward"
+            android:layout_marginRight="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@color/me_bg"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<View-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="7dp"-->
+            <!--android:background="@drawable/email" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:paddingLeft="7dp"-->
+            <!--android:text="绑定邮箱：xcxxxxx" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/change_email"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="修改"-->
+            <!--android:textColor="@color/firstColor"-->
+            <!--android:layout_marginRight="17dp"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/person_bg" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:paddingLeft="7dp"
+            android:text="修改个人中心背景图" />
+
+        <TextView
+            android:id="@+id/change_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textColor="@color/firstColor"
+            android:layout_marginRight="17dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+android:id="@+id/l_active"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/active" />
+
+
+        <TextView
+            android:id="@+id/t_active"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp"
+            android:text="请激活您的账户" />
+
+        <View
+            android:id="@+id/active"
+            android:background="@drawable/forward"
+            android:layout_marginRight="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/college" />
+
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp"
+            android:text="院系：未设置" />
+
+        <TextView
+            android:id="@+id/change_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:visibility="gone"
+            android:textColor="@color/firstColor"
+            android:layout_marginRight="17dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/me_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/major" />
+
+
+        <TextView
+            android:id="@+id/major"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dp"
+            android:text="专业：未设置" />
+
+        <TextView
+            android:id="@+id/change_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="修改"
+            android:textColor="@color/firstColor"
+            android:layout_marginRight="17dp"
+            />
+    </LinearLayout>
+</LinearLayout>

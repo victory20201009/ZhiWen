@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ZhiWen</string>
+    <string name="start">开启 zhi 问</string>
+    <string name="username">用户名：</string>
+    <string name="bind_email">绑定邮箱：</string>
+    <string name="pwd">密码：</string>
+    <string name="com_pwd">确认密码：</string>
+    <string name="go_reg">注册新账号</string>
+    <string name="remeber_pwd">记住密码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="go_login">已有账号，去登录</string>
+
+    <string name="login">登  录</string>
+    <string name="register">注  册</string>
+    <string name="cancel">取消</string>
+    <string name="publish">发布</string>
+    <string name="set_title">请输入标题...</string>
+    <string name="set_content">请输入正文...</string>
+    <string name="set_reply_content">请输入回复内容...</string>
+    <string name="choosef">添加附件</string>
+    <string name="set_reword">点击设置奖励积分</string>
+    <string name="set_crouse">选择所属课程</string>
+    <string name="set_label">添加标签，最少一个，最多3个</string>
+    <string name="search_hint">输入关键字以检索</string>
+    <string name="sys_notify">系统通知</string>
+
+    <string name="me_pro">我的提问</string>
+    <string name="me_collect">问题收藏</string>
+    <string name="me_attention">关注的人</string>
+    <string name="me_bargen">我的积分</string>
+    <string name="me_settings">系统设置</string>
+
+</resources>

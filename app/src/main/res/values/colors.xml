@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="start">#FF05DFF7</color>
+    <color name="start2">#02606b</color>
+    <color name="go_reg_up">#029ff4</color>
+    <color name="go_reg_p">#a0a7a4</color>
+
+
+
+    <color name="firstColor">#00BCD4</color>
+    <color name="secondColor">#E91E63</color>
+    <color name="thirdColor">#FF5722</color>
+    <color name="forthColor">#5e9c28</color>
+
+    <color name="transfirstColor">#9900aeb7</color>
+
+
+    <color name="colorTextContent">#444444</color>
+    <color name="colorTextTitle">#333333</color>
+
+
+    <color name="colorTextAssistant">#888888</color>
+    <color name="me_bg">#d3d3d3</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundDark">#f2f2f2</color>
+    <color name="colorDivision">#33aaaaaa</color>
+    <color name="notify_bg">#c4e9ff</color>
+    <color name="add_yellow">#f9ec04</color>
+</resources>

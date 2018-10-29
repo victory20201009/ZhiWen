@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.Main">
+
+   <ImageView
+       android:id="@+id/welcom_bg"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:contentDescription="@string/app_name"
+       android:src="@mipmap/start"
+       android:scaleType="fitXY"
+       />
+
+</LinearLayout>

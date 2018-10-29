@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_inactive">10dp</dimen>
+    <dimen name="text_active">12dp</dimen>
+    <dimen name="search_view_inset">5dp</dimen>
+    <dimen name="sliding_search_view_header_height">250dp</dimen>
+    <dimen name="padding_common">10dp</dimen>
+    <dimen name="textsize_content">14sp</dimen>
+    <dimen name="textsize_title">17sp</dimen>
+    <dimen name="padding_common_d">5dp</dimen>
+
+
+
+
+    <dimen name="division_line">0.5dp</dimen>
+
+    <dimen name="padding_common_h">15dp</dimen>
+    <dimen name="padding_common_v">10dp</dimen>
+
+
+    <dimen name="textsize_small">12sp</dimen>
+
+    <dimen name="textsize_titlesmall">16sp</dimen>
+
+    <dimen name="textsize_titlelarge">19sp</dimen>
+    <dimen name="textsize_titlebar">20sp</dimen>
+
+    <dimen name="toolbar_height">42dp</dimen>
+
+</resources>

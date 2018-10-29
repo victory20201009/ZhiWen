@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/addresp"
+        app:showAsAction="never"
+        android:title="添加回复">
+
+    </item>
+    <item android:id="@+id/delete"
+        app:showAsAction="never"
+        android:title="删除此问题">
+
+    </item>
+</menu>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.zzu.zk.zhiwen.customed_ui.MyViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:overScrollMode="never">
+
+        </com.zzu.zk.zhiwen.customed_ui.MyViewPager>
+
+
+        <com.luseen.luseenbottomnavigation.BottomNavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+           android:elevation="2dp"
+            app:bnv_shadow="true"
+            android:translationZ="2dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/masker"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:contentDescription="@string/register" />
+
+    <FrameLayout
+        android:id="@+id/q_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:id="@+id/refreshLayout"
+            app:srlHeaderHeight="500dp"
+            app:srlFooterHeight="500dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlDragRate="0.66"
+            app:srlEnablePureScrollMode="true">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:descendantFocusability="afterDescendants"
+                android:layout_width="match_parent"
+                android:paddingTop="?android:attr/actionBarSize"
+                android:clipToPadding="false"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:overScrollMode="never"
+                tools:listitem="@layout/add_item"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <com.github.mmin18.widget.RealtimeBlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+
+            app:realtimeBlurRadius="10dp"
+            app:realtimeOverlayColor="@color/transfirstColor" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/AppTheme.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@android:color/transparent"
+            app:title="">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/canael_q_sel"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/publish"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/publish"
+                    android:textColor="@drawable/pub_q_sel"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/qadd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_add"
+        android:contentDescription="@string/register" />
+</RelativeLayout>

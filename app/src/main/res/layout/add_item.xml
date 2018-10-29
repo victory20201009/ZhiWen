@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_add_q"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+        android:id="@+id/q_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/set_title"
+        android:maxLength="100"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <EditText
+            android:id="@+id/q_con"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/q_con_bg_se"
+            android:gravity="top"
+            android:hint="@string/set_content"
+            android:inputType="textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/watcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.goyourfly.multi_picture.MultiPictureView
+        android:id="@+id/multiple_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:editable="true"
+        app:max="9"
+        app:ratio="1"
+        app:space="6dp"
+        app:span="4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/firstColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/choosef"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/choosef"
+            android:gravity="center"
+            android:text="@string/choosef"
+            android:textColor="@drawable/choosef_con" />
+
+        <TextView
+            android:id="@+id/choosef_watcher"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+
+            android:gravity="right|center_vertical"
+            android:text="还可以上传5个附件，共60M"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lf1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tf1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/vf1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_selec"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lf2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tf2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/vf2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_selec"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lf3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tf3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/vf3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_selec"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lf4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tf4"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/vf4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_selec"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lf5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tf5"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:gravity="left|center_vertical"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/vf5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_selec"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/firstColor" />
+
+
+    <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+        android:id="@+id/set_reword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/set_reword"
+        android:inputType="number"
+        android:maxLength="100"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/firstColor" />
+
+
+    <TextView
+        android:id="@+id/set_crouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/set_crouse"
+        android:textColor="@drawable/go_reg_sele"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/firstColor" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_label"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zzu.zk.zhiwen.customed_ui.Label
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/choosef"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_clear_selec"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <com.zzu.zk.zhiwen.customed_ui.Label
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/choosef"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_clear_selec"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <com.zzu.zk.zhiwen.customed_ui.Label
+
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/choosef"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_clear_selec"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:text="dfjdisfjsdfkl"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/add_label"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/addl" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1.5dp"
+            android:divider = "@color/colorDivision"
+            android:background="@color/colorDivision"
+            android:dividerHeight = "1.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是有底线的"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:divider = "@color/colorDivision"
+            android:background="@color/colorDivision"
+            android:layout_height="1.5dp"
+            android:dividerHeight = "1.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

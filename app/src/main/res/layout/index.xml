@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/f1"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlEnableNestedScrolling="true">
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+
+            android:background="@android:color/white"
+            android:overScrollMode="never"
+            tools:listitem="@layout/movie_item"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.roy.library.FlodableButton
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="160dp"
+        app:bac_color="#ff0"
+        app:close_icon="@mipmap/icon_2"
+        app:inner_circle_color="@color/black"
+        app:open_icon="@mipmap/icon"
+        app:speed="30"
+        app:text="地铁／景区／商圈／城市"
+        app:text_color="@color/black"
+        app:text_size="16"
+        app:degrees="180"/>
+
+    <ImageView
+        android:layout_gravity="bottom|right"
+        android:id="@+id/to_top"
+        android:visibility="gone"
+        android:background="@drawable/to_top_sele"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</FrameLayout>

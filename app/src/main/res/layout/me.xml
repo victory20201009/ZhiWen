@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/me_bg">
+
+
+    <ImageView
+        android:id="@+id/parallax"
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_marginTop="-200dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        android:src="@mipmap/image_weibo_home_2"
+        app:layout_collapseMode="parallax" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.66"
+        app:srlEnablePureScrollMode="false"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlFooterHeight="20dp"
+        app:srlHeaderHeight="60dp">
+
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="200dp"
+
+            app:srlAccentColor="@android:color/white"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:descendantFocusability="afterDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/me_item"/>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+</FrameLayout>

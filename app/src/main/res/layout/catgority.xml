@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/toolbar_height" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingTop="@dimen/toolbar_height"
+            tools:listitem="@layout/problem_item" />
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="#888"
+            app:srlClassicsSpinnerStyle="Translate"
+            app:srlDrawableProgress="@drawable/ic_progress_puzzle" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="@color/transfirstColor" />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <fj.dropdownmenu.lib.view.DropdownButton
+            android:id="@+id/btnRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+            android:id="@+id/search_label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:focusable="auto"
+            android:hint="@string/search_hint"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColorHint="@color/colorTextAssistant"
+            android:textSize="15sp" />
+
+
+        <View
+            android:id="@+id/find"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/find" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <fj.dropdownmenu.lib.view.DropdownColumnView
+        android:id="@+id/lvRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:columnType="threeRow" />
+
+
+    <LinearLayout
+        android:id="@+id/got"
+        android:layout_width="56dp"
+        android:layout_height="116dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/gotop"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/fab"
+            android:src="@drawable/go_top" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

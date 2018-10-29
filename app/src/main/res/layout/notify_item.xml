@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_common">
+
+
+    <LinearLayout
+        android:id="@+id/no1"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/pro"
+            android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:text=" 新的问题" />
+
+        <TextView
+            android:id="@+id/c1"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/ic_comments"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:text=" 新的回复" />
+
+        <TextView
+            android:id="@+id/c2"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text=" 有人关注" />
+
+
+        <TextView
+            android:id="@+id/c3"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/ic_zan"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 有人采纳" />
+
+        <TextView
+            android:id="@+id/c4"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:textSize="15sp"
+            android:ellipsize="middle"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/no5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/star"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有人收藏你的问题" />
+
+        <TextView
+            android:id="@+id/c5"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:textSize="15sp"
+            android:ellipsize="middle"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/ic_unzan"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 有人取消关注你" />
+
+        <TextView
+            android:id="@+id/c6"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:ellipsize="middle"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/noti_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawableStart="@drawable/unstar"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 有人取消收藏你的问题" />
+
+        <TextView
+            android:id="@+id/c7"
+            android:layout_width="0dp"
+            android:textColor="#1e000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

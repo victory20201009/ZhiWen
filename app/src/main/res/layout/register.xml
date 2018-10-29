@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wel_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="120dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/username" />
+
+            <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+                android:id="@+id/r_un"
+                android:maxLength="40"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/bind_email" />
+
+            <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+                android:id="@+id/r_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="40"
+                android:layout_width="0dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/pwd" />
+
+            <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/r_pwd"
+                android:inputType="textPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/com_pwd" />
+
+            <com.zzu.zk.zhiwen.customed_ui.ClearableEditText
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/r_cpwd"
+                android:inputType="textPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/go_login"
+
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="right"
+                android:focusable="true"
+                android:textColor="@drawable/go_reg_sele"
+                android:layout_height="wrap_content"
+
+                android:text="@string/go_login" />
+
+
+
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_marginTop="40dp"
+            android:layout_width="200dp"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/register"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@drawable/login_btn_con_bg"
+            android:textSize="18sp"
+
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
